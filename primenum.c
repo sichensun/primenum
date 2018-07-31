@@ -4,19 +4,19 @@
 
 int main()
 {
-	int number;
+	unsigned long number;
 	printf("Input a number: ");
 	scanf("%d",&number);
-	int max = (int)sqrt(number);
-	for(int i = 2;i <= max;i++)
+	unsigned long max = (unsigned long)sqrt(number);
+	for(unsigned long i = 2;i <= max;i++)
 	{
 		if(number % i == 0)
 		{
-			printf("%d is not a primenum\n",number);
+			printf("%lu is not a primenum\n",number);
 			exit(0);
 		}
 	}
-	printf("%d is a primenum\n",number);
+	printf("%lu is a primenum\n",number);
 	return 0;
 }
 
